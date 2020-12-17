@@ -4,12 +4,12 @@
 
 [![Actions Status](https://github.com/TankerHQ/identity-go/workflows/Tests/badge.svg)](https://github.com/TankerHQ/identity-go/actions) [![codecov](https://codecov.io/gh/TankerHQ/identity-go/branch/master/graph/badge.svg)](https://codecov.io/gh/TankerHQ/identity-go) [![GoDoc][doc-badge]][doc]
 
-Identity generation in Go for the [Tanker SDK](https://docs.tanker.io/latest/).
+Identity generation in GO for the [Tanker SDK](https://docs.tanker.io/latest/).
 
 ## Installation
 
 ```bash
-go get github.com/TankerHQ/identity-go/identity
+go get github.com/TankerHQ/identity-go
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"errors"
 
-	"github.com/TankerHQ/identity-go/identity"
+	"github.com/TankerHQ/identity-go"
 )
 
 var config = identity.Config{
@@ -79,7 +79,7 @@ Read more about identities in the [Tanker guide](https://docs.tanker.io/latest/g
 Run tests:
 
 ```bash
-go test ./... -test.v
+go test -v
 ```
 
 ## Contributing
